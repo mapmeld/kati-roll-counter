@@ -1,0 +1,113 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Kati Roll Counter
+
+    // custom style
+    link(href="/main.css", rel="stylesheet", type="text/css")
+
+  body
+    .topfix
+      strong Your Name
+      input.name(type="text", placeholder="Your name")
+      button.wantorder I want to order
+      br
+      strong Your Individual Order
+      span.order None
+      span.price 0
+
+    ol
+      li
+        strong Unda Roll
+        p
+          Flat bread layered with freshly beaten grilled eggs
+          button.single 3.50
+          button.double 6.25
+
+      li.veggie
+        strong Aloo Masala Roll
+        p
+          Spicy mashed potato with tomatoes and green peppers
+          button.single 4.50
+          button.double 8.25
+
+      li
+        strong Unda Aloo Roll
+        p
+          Spicy potato roll with a layer of beaten eggs
+          button.single 5.50
+          button.double 10.25
+
+      li.veggie
+        strong Achari Paneer Roll
+        p
+          Grilled Indian farmer's cheese cubes, marinated in a spicy ickle
+          button.single 5.50
+          button.double 10.25
+
+      li.veggie
+        strong Chana Masala Roll
+        p
+          Chickpeas with tomatoes and blackening spices
+          button.single 5.00
+          button.double 9.25
+
+      li.veggie
+        strong Mixed-Veggie Roll
+        p
+          Beets and assorted vegetable croquette, with peanuts and raisins
+          button.single 5.50
+          button.double 10.25
+
+      li
+        strong Chicken Tikka Roll
+        p
+          Grilled chicken cubes, marinated in yoghurt and spices
+          button.single 5.00
+          button.double 9.25
+
+      li
+        strong Unda Chicken Roll
+        p
+          Chicken tikka roll with a layer of beaten eggs
+          button.single 6.00
+          button.double 11.25
+
+      li
+        strong Beef Tikka Roll
+        p
+          Grilled beef top round cubes, marinated in yoghurt and spices
+          button.single 5.50
+          button.double 10.25
+
+      li
+        strong Unda Beef Roll
+        p
+          Beef tikka roll with a layer of beaten eggs
+          button.single 6.50
+          button.double 12.25
+
+      li
+        strong Shami Kabab Roll
+        p
+          Minced-lamb and lentil croquette with herbs and spices
+          button.single 5.50
+          button.double 10.25
+
+      li
+        strong Unda Shami Roll
+        p
+          Shami kabab roll with a layer of beaten eggs
+          button.single 6.50
+          button.double 12.25
+
+      li
+        strong Shrimp Masala Roll
+        p
+          Grilled tiger shrimp, marinated in coconut milk and spices
+          button.single 6.75
+          button.double 12.75
+
+    script(type="text/javascript", src="/jquery-1.11.3.min.js")
+    script(type="text/javascript", src="/app.js")
