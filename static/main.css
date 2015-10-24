@@ -19,6 +19,14 @@ body {
   font-size: 14pt;
 }
 
+.allOrders {
+  position: fixed;
+  top: 220px;
+  right: 0;
+  background: #fff;
+  border-left: 1px solid #000;
+}
+
 button.single, button.double {
   margin: 5px;
   padding: 5px;

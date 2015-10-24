@@ -1,7 +1,8 @@
 mongoose = require 'mongoose'
 
 orderSchema = mongoose.Schema({
-  orders: Array
+  orders: Object,
+  firstPerson: Boolean
 })
 
 module.exports = mongoose.model('Order', orderSchema)

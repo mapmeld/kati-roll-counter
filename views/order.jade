@@ -9,13 +9,16 @@ html
 
   body
     .topfix
-      strong Your Name
+      strong First, enter your name
       input.name(type="text", placeholder="Your name")
-      button.wantorder I want to order
+      button.wantorder Include Me
       br
       strong Your Individual Order
       span.order None
       span.price 0
+
+    if order.firstPerson
+      ul.allOrders
 
     ol
       li
@@ -110,4 +113,6 @@ html
           button.double 12.75
 
     script(type="text/javascript", src="/jquery-1.11.3.min.js")
+    script(type="text/javascript", src="/socket.io/socket.io.js")
+    script(type="text/javascript") order_id = "!{order.id}"; allOrders = !{JSON.stringify(order.orders || {})}
     script(type="text/javascript", src="/app.js")
